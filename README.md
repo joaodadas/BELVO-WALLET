@@ -31,7 +31,7 @@ Here’s a quick map of all the API endpoints used in this project:
 | `/wallet/send`             | POST   | Send cryptocurrency to another user |
 | `/wallet/request`          | POST   | Request cryptocurrency from another user |
 
-> All requests are authenticated using the JWT token in the `Authorization` header as a `Bearer` token.
+All requests are authenticated using the JWT token in the `Authorization` header as a `Bearer` token.
 
 ```http
 Authorization: Bearer <your_token_here>
