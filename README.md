@@ -24,22 +24,6 @@ All requests are authenticated using the JWT token in the `Authorization` header
 
 Authorization: Bearer <your_token_here>
 
-## 📁 Project Structure
-
-$ tree
-.
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── Button.tsx
-│   │   └── Card.tsx
-│   ├── App.tsx
-│   └── main.tsx
-├── package.json
-└── tsconfig.json
-
-
 ## ✅ Features
 
 - 🔐 User login with JWT token (with expiration control)
