@@ -1,4 +1,4 @@
-// src/contexts/AuthContext.tsx
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { login as loginService } from '../services/auth';
 import { isTokenExpired } from '../utils/isTokenExpired';
@@ -18,7 +18,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   });
 
   useEffect(() => {
-    let interval: NodeJS.Timeout;
+    let interval: number;
 
     if (token) {
       localStorage.setItem('token', token);
