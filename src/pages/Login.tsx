@@ -1,5 +1,3 @@
-// src/pages/Login.tsx
-
 import {
   Box,
   Button,
@@ -11,7 +9,7 @@ import {
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import LockIcon from '@mui/icons-material/Lock'; // ícone opcional
+import LockIcon from '@mui/icons-material/Lock';
 
 export default function Login() {
   const { login } = useAuth();
@@ -43,9 +41,9 @@ export default function Login() {
       <Paper
         elevation={8}
         sx={{
-          p: 4,
-          width: '100%',
-          maxWidth: 400,
+          p: { xs: 2, sm: 4 },
+          width: '90%',
+          maxWidth: 360,
           borderRadius: 3,
           backgroundColor: '#101418',
           border: '1px solid #2C2C2E',
@@ -57,13 +55,12 @@ export default function Login() {
           color="white"
           textAlign="center"
           gutterBottom
-          pb={5}
+          pb={3}
         >
           Belvo Wallet
         </Typography>
 
         <form onSubmit={handleSubmit}>
-          {/* Stack dos inputs */}
           <Stack spacing={2}>
             <TextField
               label="Username"
@@ -82,6 +79,7 @@ export default function Login() {
               InputLabelProps={{ style: { color: '#ccc' } }}
               InputProps={{ style: { color: 'white' } }}
             />
+
             {error && (
               <Typography color="error" fontSize="0.9rem">
                 {error}
@@ -89,7 +87,6 @@ export default function Login() {
             )}
           </Stack>
 
-          {/* Stack do botão com espaçamento top */}
           <Stack mt={3}>
             <Button
               variant="contained"

@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 export async function getWallet(token: string) {
   const res = await fetch(`${API_BASE_URL}/wallet`, {
@@ -62,7 +62,7 @@ export async function getContacts(token: string) {
 
   if (!res.ok) throw new Error('Could not fetch contacts');
 
-  const data = await res.json(); // ✅ parse do body só uma vez
-  console.log('Contatos recebidos:', data); // ✅ log agora funciona
+  const data = await res.json();
+  console.log('Contatos recebidos:', data);
   return data;
 }

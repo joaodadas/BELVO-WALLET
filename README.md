@@ -1,91 +1,50 @@
+from pathlib import Path
+from zipfile import ZipFile
 
-# 💼 Belvo Wallet - Frontend Challenge V2
+# Conteúdo do README.md
+readme_content = """# 💸 Belvo Wallet – Frontend Code Challenge (V2)
 
-Este projeto é a implementação do desafio técnico fornecido pela Belvo. A aplicação consiste em uma carteira de criptomoedas que permite visualizar saldo, transações recentes, enviar e solicitar criptomoedas entre contatos.
+A responsive crypto wallet dashboard built with React, TypeScript and Material UI as part of the Belvo Frontend Code Challenge.
 
-## 🚀 Tecnologias Utilizadas
+## 🌐 Live Demo
 
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
-- [Material UI](https://mui.com/)
-- [FastAPI (API fornecida via Docker)](https://fastapi.tiangolo.com/)
-
-## ✅ Funcionalidades Implementadas
-
-- [x] Autenticação via JWT
-- [x] Armazenamento seguro do token no localStorage
-- [x] Redirecionamento automático após login
-- [x] Visualização do saldo de criptomoedas (BTC, ETH, DOGE)
-- [x] Listagem de transações recentes
-- [x] Envio de criptomoedas para contatos
-- [x] Solicitação de criptomoedas (extra)
-- [x] Tema escuro com layout responsivo e estilizado com Material UI
-
-## 📦 Como rodar o projeto
-
-### Pré-requisitos
-
-- Node.js (v18+)
-- Docker (para rodar a API)
-
-### Instalação
-
-```bash
-# Clone o projeto
-git clone https://github.com/seu-usuario/belvo-wallet.git
-cd belvo-wallet
-
-# Instale as dependências
-npm install
-```
-
-### Rodar a API (Docker)
-
-```bash
-docker compose up --build
-# A API estará disponível em: http://localhost:8000
-```
-
-### Rodar o Frontend
-
-```bash
-npm run dev
-# A aplicação estará disponível em: http://localhost:5173
-```
-
-## 🧪 Usuários de Teste
-
-Utilize as credenciais abaixo para testar o login:
-
-```txt
-username: vicky
-password: secret
-```
-
-## 📁 Estrutura de Pastas
-
-```
-src/
-├── components/         # Componentes reutilizáveis
-├── contexts/           # Contexto de autenticação
-├── pages/              # Telas principais (Login e Wallet)
-├── routes/             # Rotas protegidas
-├── services/           # Integração com a API
-├── App.tsx             # Rotas principais
-├── main.tsx            # Ponto de entrada
-```
-
-## 📷 Prints da Interface
-
-<em>Adicione aqui capturas de tela das páginas Login e Wallet.</em>
-
-## ✨ Melhorias Futuras
-
-- Animações de carregamento mais suaves
-- Toasts com feedback visual para erros e sucesso
-- Exibição das solicitações pendentes de criptomoeda
-- Deploy na Vercel (opcional)
+👉 [https://belvo-wallet-76yb.vercel.app](https://belvo-wallet-76yb.vercel.app)
 
 ---
-.
+
+## 📸 Screenshots
+
+_Add screenshots here: login screen, wallet dashboard, transactions, mobile view, etc._
+
+---
+
+## ✅ Features
+
+- 🔐 User login with JWT token (with expiration control)
+- 👤 Contacts list for sending/requesting crypto
+- 📤 Send cryptocurrency
+- 📥 Request cryptocurrency
+- 💼 View balances (BTC, ETH, DOGE)
+- 📊 Portfolio chart with historical data
+- 📃 Transaction history with status and timestamp
+- ⚠️ Auto logout on token expiration
+- 🌙 Dark theme interface
+- 📱 Responsive layout (mobile-friendly)
+
+---
+
+## 🚀 Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Material UI (MUI)](https://mui.com/)
+- [Recharts](https://recharts.org/)
+- [JWT Decode](https://github.com/auth0/jwt-decode)
+
+---
+
+## 🧪 Test Credentials
+
+Use these to log in (provided by the challenge API):
+
