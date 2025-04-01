@@ -36,6 +36,7 @@ export function SendCryptoForm({ onSuccess }: { onSuccess: () => void }) {
       setCurrency('BTC');
       setDescription('');
     } catch (err) {
+      console.log(err)
       setError('Failed to send crypto.');
     }
   };

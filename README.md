@@ -44,6 +44,6 @@ A responsive crypto wallet dashboard built with React, TypeScript and Material U
 - [JWT Decode](https://github.com/auth0/jwt-decode)
 
 
-## Made by João Vitor Dadas 
-- [site](https://joaodadas.com.br)
+# Made by João Vitor Dadas 
+- [My personal website](https://joaodadas.com.br)
 

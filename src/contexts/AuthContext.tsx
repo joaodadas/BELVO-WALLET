@@ -28,7 +28,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           alert('Sessão expirada. Faça login novamente.');
           logout();
         }
-      }, 5000); // verifica a cada 5s
+      }, 5000); 
     } else {
       localStorage.removeItem('token');
     }
