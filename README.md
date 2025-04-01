@@ -1,7 +1,6 @@
-from pathlib import Path
-from zipfile import ZipFile
 
-# Conteúdo do README.md
+
+# Belvo Wallet
 
 A responsive crypto wallet dashboard built with React, TypeScript and Material UI as part of the Belvo Frontend Code Challenge.
 
@@ -12,15 +11,12 @@ A responsive crypto wallet dashboard built with React, TypeScript and Material U
 
 ## 📸 Screenshots
 
-### 🔐 Login Page
 
 ![Login](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/login.png?raw=true)
 
-### 💼 Wallet Page - Overview
 
 ![Wallet Overview](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/wallet-1.png?raw=true)
 
-### 📊 Wallet Page - Details
 
 ![Wallet Transactions](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/wallet-2.png?raw=true)
 
@@ -48,7 +44,6 @@ A responsive crypto wallet dashboard built with React, TypeScript and Material U
 - [JWT Decode](https://github.com/auth0/jwt-decode)
 
 
-## 🧪 Test Credentials
-
-Use these to log in (provided by the challenge API):
+## Made by João Vitor Dadas 
+- [site](https://joaodadas.com.br)
 
