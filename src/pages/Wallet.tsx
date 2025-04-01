@@ -1,4 +1,3 @@
-// src/pages/Wallet.tsx
 import {
   Box,
   Typography,
@@ -8,8 +7,6 @@ import {
   CircularProgress,
   Stack,
   Divider,
-  useMediaQuery,
-  useTheme,
 } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
@@ -22,9 +19,6 @@ export default function WalletPage() {
   const { token } = useAuth();
   const [wallet, setWallet] = useState<any>(null);
   const [error, setError] = useState(false);
-
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   useEffect(() => {
     if (!token) return;
@@ -66,9 +60,8 @@ export default function WalletPage() {
         Wallet Dashboard
       </Typography>
 
-      {/* Balance + USD Value */}
       <Grid container spacing={2}>
-        {/* USD Value */}
+        {/* USD CARD */}
         <Grid item xs={12} sm={6} md={3}>
           <Card
             sx={{
@@ -81,16 +74,16 @@ export default function WalletPage() {
           >
             <Stack spacing={1}>
               <Typography variant="body2" color="gray">
-                💰 Estimated Value
+                USD Value 
               </Typography>
-              <Typography variant="h6" fontWeight="bold" color="success.main">
-                ${totalUSD.toFixed(2)}
+              <Typography variant="h6" fontWeight="bold">
+                {totalUSD.toFixed(2)} USD
               </Typography>
             </Stack>
           </Card>
         </Grid>
 
-        {/* Crypto balances */}
+        {/* BALANCE CARDS */}
         {['ETH', 'BTC', 'DOGE'].map((currency) => (
           <Grid item xs={12} sm={6} md={3} key={currency}>
             <Card
@@ -115,12 +108,12 @@ export default function WalletPage() {
         ))}
       </Grid>
 
-      {/* Chart */}
+      {/* CHART */}
       <Grid item xs={12} mt={3}>
         <WalletChart balance={wallet.balance} />
       </Grid>
 
-      {/* Forms */}
+      {/* FORMS */}
       <Grid container spacing={3} mt={1}>
         <Grid item xs={12} md={6}>
           <SendCryptoForm onSuccess={() => getWallet(token).then(setWallet)} />
@@ -130,7 +123,7 @@ export default function WalletPage() {
         </Grid>
       </Grid>
 
-      {/* Transactions */}
+      {/* TRANSACTIONS */}
       <Grid item xs={12} mt={3}>
         <Card
           sx={{
@@ -148,9 +141,9 @@ export default function WalletPage() {
             {wallet.transactions.map((tx: any, index: number) => (
               <Box key={index} mt={2} mb={2}>
                 <Stack
-                  direction={isMobile ? 'column' : 'row'}
+                  direction={{ xs: 'column', sm: 'row' }}
                   justifyContent="space-between"
-                  alignItems={isMobile ? 'flex-start' : 'center'}
+                  alignItems={{ xs: 'flex-start', sm: 'center' }}
                   spacing={2}
                 >
                   <Box>

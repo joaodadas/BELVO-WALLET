@@ -2,7 +2,6 @@ from pathlib import Path
 from zipfile import ZipFile
 
 # Conteúdo do README.md
-readme_content = """# 💸 Belvo Wallet – Frontend Code Challenge (V2)
 
 A responsive crypto wallet dashboard built with React, TypeScript and Material UI as part of the Belvo Frontend Code Challenge.
 
@@ -10,13 +9,20 @@ A responsive crypto wallet dashboard built with React, TypeScript and Material U
 
 👉 [https://belvo-wallet-76yb.vercel.app](https://belvo-wallet-76yb.vercel.app)
 
----
 
 ## 📸 Screenshots
 
-_Add screenshots here: login screen, wallet dashboard, transactions, mobile view, etc._
+### 🔐 Login Page
 
----
+![Login](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/login.png?raw=true)
+
+### 💼 Wallet Page - Overview
+
+![Wallet Overview](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/wallet-1.png?raw=true)
+
+### 📊 Wallet Page - Details
+
+![Wallet Transactions](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/wallet-2.png?raw=true)
 
 ## ✅ Features
 
@@ -31,7 +37,6 @@ _Add screenshots here: login screen, wallet dashboard, transactions, mobile view
 - 🌙 Dark theme interface
 - 📱 Responsive layout (mobile-friendly)
 
----
 
 ## 🚀 Tech Stack
 
@@ -42,7 +47,6 @@ _Add screenshots here: login screen, wallet dashboard, transactions, mobile view
 - [Recharts](https://recharts.org/)
 - [JWT Decode](https://github.com/auth0/jwt-decode)
 
----
 
 ## 🧪 Test Credentials
 
