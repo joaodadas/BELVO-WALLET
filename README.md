@@ -20,6 +20,23 @@ A responsive crypto wallet dashboard built with React, TypeScript and Material U
 
 ![Wallet Transactions](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/wallet-2.png?raw=true)
 
+## 🗺️ API Endpoints Map
+
+Here’s a quick map of all the API endpoints used in this project:
+
+| Endpoint                    | Method | Description                         |
+|----------------------------|--------|-------------------------------------|
+| `/login`                   | POST   | Authenticate user and return JWT    |
+| `/wallet`                  | GET    | Retrieve wallet balances & transactions |
+| `/wallet/send`             | POST   | Send cryptocurrency to another user |
+| `/wallet/request`          | POST   | Request cryptocurrency from another user |
+
+> All requests are authenticated using the JWT token in the `Authorization` header as a `Bearer` token.
+
+```http
+Authorization: Bearer <your_token_here>
+
+
 ## ✅ Features
 
 - 🔐 User login with JWT token (with expiration control)
