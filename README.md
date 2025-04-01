@@ -9,17 +9,6 @@ A responsive crypto wallet dashboard built with React, TypeScript and Material U
 👉 [https://belvo-wallet-76yb.vercel.app](https://belvo-wallet-76yb.vercel.app)
 
 
-## 📸 Screenshots
-
-
-![Login](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/login.png?raw=true)
-
-
-![Wallet Overview](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/wallet-1.png?raw=true)
-
-
-![Wallet Transactions](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/wallet-2.png?raw=true)
-
 ## 🗺️ API Endpoints Map
 
 Here’s a quick map of all the API endpoints used in this project:
@@ -58,6 +47,17 @@ Authorization: Bearer <your_token_here>
 - [Material UI (MUI)](https://mui.com/)
 - [Recharts](https://recharts.org/)
 - [JWT Decode](https://github.com/auth0/jwt-decode)
+
+## 📸 Screenshots
+
+
+![Login](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/login.png?raw=true)
+
+
+![Wallet Overview](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/wallet-1.png?raw=true)
+
+
+![Wallet Transactions](https://github.com/joaodadas/BELVO-WALLET/blob/main/src/img/wallet-2.png?raw=true)
 
 
 # Made by João Vitor Dadas 
