@@ -1,7 +1,7 @@
 // src/contexts/AuthContext.tsx
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { login as loginService } from '../services/auth';
-import { isTokenExpired, getTokenExpirationTime } from '../utils/isTokenExpired';
+import { isTokenExpired } from '../utils/isTokenExpired';
 
 interface AuthContextType {
   token: string | null;
