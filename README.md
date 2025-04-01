@@ -33,7 +33,6 @@ Here’s a quick map of all the API endpoints used in this project:
 
 All requests are authenticated using the JWT token in the `Authorization` header as a `Bearer` token.
 
-```http
 Authorization: Bearer <your_token_here>
 
 
