@@ -24,6 +24,9 @@ All requests are authenticated using the JWT token in the `Authorization` header
 
 Authorization: Bearer <your_token_here>
 
+## 🗂️ Project Structure
+
+BELVO-WALLET/ ├── public/ │ └── index.html ├── src/ │ ├── assets/ │ ├── components/ │ │ ├── RequestCryptoForm.tsx │ │ ├── SendCryptoForm.tsx │ │ └── WalletChart.tsx │ ├── contexts/ │ │ └── AuthContext.tsx │ ├── img/ │ │ ├── login.png │ │ ├── wallet-1.png │ │ └── wallet-2.png │ ├── pages/ │ │ ├── Login.tsx │ │ └── WalletPage.tsx │ ├── services/ │ │ ├── auth.ts │ │ └── wallet.ts │ ├── utils/ │ │ └── isTokenExpired.ts │ ├── App.tsx │ ├── main.tsx │ └── vite-env.d.ts ├── .env ├── .gitignore ├── index.html ├── package.json ├── tsconfig.json └── vite.config.ts
 
 ## ✅ Features
 
